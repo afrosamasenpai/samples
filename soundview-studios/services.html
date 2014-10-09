@@ -19,11 +19,15 @@
 	<!-- Javascript & jQuery-->
 	<!-- jQuery library -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
 	<!-- Cyclr 2 -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
     <!-- Modernizr -->
     <script src="js/vendor/modernizr.custom.71422.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/googlemaps.js"></script>
 
 </head>
 <body>	
@@ -38,7 +42,7 @@
 </nav>
 
 <!-- Removed the 'main-' because it broke the off-canvas menu -->
-<div id="container">	
+<div id="container" class="services">	
 
 <!-- Site Overlay -->
 <div class="site-overlay"></div>
@@ -53,103 +57,73 @@
  	<div class="menu-btn"></div>
 
 		<ul>
-			<a href="index.html" class="active"><li>Home</li></a>
+			<a href="index.html"><li>Home</li></a>
 			<a href="studio.html"><li>Studios</li></a>
-			<a href="services.html"><li>Services</li></a>
+			<a href="services.html" class="active"><li>Services</li></a>
 			<a href="#"><li>About us</li></a>
 		</ul>
 </nav>
-
-<!-- Top Slideshow -->
-<div class="cycle-slideshow"
-	data-cycle-fx=fadeout
-	data-cycle-pause-on-hover="true"
-    data-cycle-timeout="4000"
-    data-cycle-overlay-template="{{title}}<br><span class=desc>{{desc}}</span>">
-
-    <div class="cycle-overlay"></div>
-    <div class="cycle-pager"></div>
-    <div class="cycle-prev"></div>
-    <div class="cycle-next"></div>
-
-    <img src="images/optimized/soundview-1.jpg" 
-    data-cycle-title="Great studios" 
-    data-cycle-desc="At an affordable price">
-
-    <img src="images/optimized/soundview-2.jpg" 
-    data-cycle-title="Large area" 
-    data-cycle-desc="Premium location">
-    
-    <img src="images/optimized/soundview-3.jpg" 
-    data-cycle-title="Green Screen" 
-    data-cycle-desc="Studio space">
-
-</div>
-
-	<!-- <div class="overlay">
-		<h1>Great Studios</h1>
-		<h2>At an affordable price</h2>
-	</div> -->
-
-	<div class="content-1">
-		<div class="guidance"><p>Scroll down to read more about our amazing studio<p></div>
-		<div class="blue-box"><a href=".scrollto" class="scrolldown"><div class="arrow"></div></a></div>
-
-		<div class="scrollto"></div>
-		<div class="inner-content">
-			<p>An independently-owned, fully equipped global media broadcasting, video production and post-production company based in the heart of New York City's TV and motion-picture district</p>
-		</div>
-	<div class="descrip-container">
-		<div class="descrip">
-			<div class="circle"><img src="images/optimized/soundview-2.jpg"></div>
-			<h1>Studio Space</h1>
-			<p>From India, Pakistan, Bangladesh, Africa, Egypt, the U.S.and elsewhere to audiences from the United States, Canada, Europe and the UK</p>
-		</div>
-
-		<div class="descrip">
-			<div class="circle"><img src="images/optimized/soundview-2.jpg"></div>
-			<h1>Post Production</h1>
-			<p>From India, Pakistan, Bangladesh, Africa, Egypt, the U.S.and elsewhere to audiences from the United States, Canada, Europe and the UK</p>
-		</div>
-
-		<div class="descrip">
-			<div class="circle"><img src="images/optimized/soundview-2.jpg"></div>
-			<h1>Broadcasting</h1>
-			<p>From India, Pakistan, Bangladesh, Africa, Egypt, the U.S.and elsewhere to audiences from the United States, Canada, Europe and the UK</p>
-		</div>
-</div>		
-</div>
-
-<div class="content-2">
-	<div class="black-box"></div>
 	
-	<div class="overlay">
-		<h1>Make the most out of</h1>
-		<h2>Post-Production</h2>
+	<div class="content-2">
+		<div class="black-box"></div>
+	
+		<div class="overlay">
+			<h1>SoundView Services</h1>
+			<h2>Production</h2>
+		</div>
+
+		<div class="content-2-descrip">
+			<div class="blue">
+			<p>Make the step from Creation to Broadcast almost effortless.</p>
+			<p>6 fully-equipped broadcast-ready SD & HD TV (???) Production/Broadcast Studios for generation of recorded original content and/or live cable and satellite transmission.</p>
+			<p>SoundView Studios will guide you through every phase of your TV or video project, from planning to all aspects of studio production and broadcast. </p>
+			</div>
+
+			<div class="blue">
+			<span class="overlay"><h2>Post Production</h2></span>
+			<p>Adobe Premiere and Final Cut Pro - 10 video editing suites</p>
+			<p>Equipped with the latest software and hardware for handling all domestic and foreign video formats.</p>
+
+			<h3>Audio Recording Booth</h3>
+			<p>Records up to twelve audio channels.</p>
+			<p>Perfect for:</p>
+			<ul>
+				<li>Voiceovers</li>
+				<li>Annoucements</li>
+				<li>Sound effects</li>
+				<li>Music</li>
+			</ul>
+
+
+			<h3>Additional production and work spaces:</h3>
+			<ul>
+				<li>Dressing & Makeup Rooms</li>
+				<li>Green Rooms</li>
+				<li>Production Offices</li>
+				<li>Casting Space</li>
+				<li>Full working Kitchen Set</li>
+				<li>Conference Rooms </li>
+				<li>Event & Entertainment Spaces:
+				
+				<span>Corporate Events, Press Conferences, Public & Private Functions</span></li>
+			</ul>
+
+			<h3>Additional services</h3>
+			<ul>
+				<li>Backdrops, Set Furniture & Props</li>
+				<li>Set Design & Construction</li>
+				<li>Wardrobe & Prop Storage</li>
+				<li>Call Center for live shows</li>
+				<li>Teleprompters</li>
+				<li>Freight Elevator</li>
+				<li>Additional Personnel</li>
+			</ul>
+			</div>
+		</div>
+		
 	</div>
 
-	<div class="content-2-descrip">
-		<img src="images/HD.png">
-		<h2>HD Capabilities</h2>
-		<p>From India, Pakistan, Bangladesh, Africa, Egypt, the U.S.and elsewhere to audiences from the United States, Canada, Europe and the UK</p>
-	</div>
-	<br>
-			<div class="content-2-descrip">
-				<img src="images/action.png">
-				<h2>HD Capabilities</h2>
-				<p>From India, Pakistan, Bangladesh, Africa, Egypt, the U.S.and elsewhere to audiences from the United States, Canada, Europe and the UK</p>
-			</div>
-			<div class="content-2-descrip">
-				<img src="images/camera.png">
-				<h2>HD Capabilities</h2>
-				<p>From India, Pakistan, Bangladesh, Africa, Egypt, the U.S.and elsewhere to audiences from the United States, Canada, Europe and the UK</p>
-			</div>
-						
-	
-							<div class="button">
-								<a href="">View More</a>
-							</div>
-</div>
+
 	
 	<div class="content-1">
 	<div class="blue-box"></div>
@@ -158,7 +132,7 @@
 
 		<div id="map-canvas" class="inner-content">
 		</div>
-
+		
 		<div class="mapinfo">
 			<h3>SoundView Broadcasting</h3>
 			<br>
