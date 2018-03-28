@@ -1,0 +1,81 @@
+/* Reset */ 
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block; box-sizing: border-box;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+html {
+    font-size: 16px;
+    font-size: calc(14px + .075vw);
+    letter-spacing: 0.015em;
+    font-family: 'nimbus_sans_lregular', sans-serif;
+}
+
+body {
+    /*background-color: #3b3b3b;*/
+    background-color: #fff;
+    color: #353B3C;
+}
+
+#container {
+    max-width: 100%;
+    width: 1024px;
+    margin: 48px auto 0;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'nimbus_sans_lbold', sans-serif;
+    margin: 1.3em 0 .74em;
+}
+
+a {
+    color: #d88a6b;
+    text-underline-position: under;
+}
+
+a:active, a:hover {
+    color: #846A6A;  
+}
+
+.error-message {
+    text-align: center;
+    color: red;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.error-message.error {
+    opacity: 1;
+}
+
+table {
+    width: 100%;
+    max-width: 960px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #C6C7C4;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+table.rentable {
+    transition: opacity .4s ease;
+    opacity: 0;
+}
+
+table.rentable.success {
+    opacity: 1;
+}
+table thead {
+    font-size: .9rem;
+    font-family: 'nimbus_sans_lbold', sans-serif;
+    background: #C6C7C4;
+    color: #353B3C;
+}
+
+table td {
+    padding: 16px;
+    color: #3D515F;
+}
+
+table .hover { 
+    background-color: #EEF0F2; 
+}
