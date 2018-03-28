@@ -28,7 +28,7 @@ function get_content($file, $url, $minutes = 10) {
 		file_put_contents($file, $content);
 		
 		return $file;
-	} if (file_exists($file) && ($current_time - $expire_time < $file_time) ) {
+	} if (file_exists($file) && ($current_time - $expire_time < $file_time ) || $response != 0)  {
 		return $file;
 	} else {
 		$content = file_get_contents($url);
